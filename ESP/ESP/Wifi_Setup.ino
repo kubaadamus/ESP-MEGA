@@ -1,9 +1,9 @@
 void wifi_setup(){
     Print("Zmieniamy parametry wifi. Wpisz nowe SSID:");
-    String ssid = ReadAsync();
+    String ssid = read_async();
     Print("Nowe SSID to: " + ssid);
     Print("Wpisz hasło sieci");
-    String password = ReadAsync();
+    String password = read_async();
     Print("Nowe hasło to:" + password);
     Print("Zmiana parametrów wifi przebiegła pomyślnie");
 }

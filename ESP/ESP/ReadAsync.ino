@@ -1,4 +1,4 @@
-String ReadAsync()
+String read_async()
 {
 String InputRead="";
 while(true)

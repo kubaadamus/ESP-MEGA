@@ -5,8 +5,6 @@ Serial.begin(115200);
 
 void loop() {
 
-
-
 //============= E S P  C Z Y T A  Z  M E G A ==========//
 while(Serial.available() > 0)
 {

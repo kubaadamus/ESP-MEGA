@@ -1,2 +1,4 @@
 Jesli chcesz wpisywaæ w serial port stringi i odbieraæ w arduino za pomoc¹ if (inChar == '\n') to zawsze zmieñ w porcie com z "brak zakoñczenia linii" na "nowa linia"
 
+
+Urz¹dzenia komunikuj¹ siê miêdzy sob¹ WY£¥CZNIE za pomoc¹ funkcji Print(String)!! Z uzytkownikiem komunikuje siê wy³¹cznie Mega za pomoc¹ Serial.print (nie Serial1.print)!

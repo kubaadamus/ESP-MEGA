@@ -13,6 +13,14 @@ void user_interface(String InputFromMEGA)
       Print("Uruchamiam wifi_setup");
       wifi_setup();
     }
+    else if((InputFromMEGA=="wifi_connect"))
+    {
+      Print("Uruchamiam procedure wifi_connect!");
+    }
+    else if((InputFromMEGA=="wifi_request"))
+    {
+      wifi_request();
+    }
     else{
       Print("ESP nie rozpoznaje komendy: "+InputFromMEGA);
     }

@@ -1,36 +1,41 @@
-String InputFromESP="";
-String InputFromCOM="";
+String InputFromESP=""; //Dane ESP -> MEGA
+String InputFromCOM=""; //Dane Serial -> MEGA
 void setup() {
-Serial1.begin(115200);
-Serial.begin(115200);
+Serial1.begin(115200); //Serial pomiędzy ESP - MEGA
+Serial.begin(115200); //Serial pomiędzy PC - MEGA
 
-pinMode(LED_BUILTIN,OUTPUT);
+pinMode(LED_BUILTIN,OUTPUT); //dioda wbudowana - debug
+
+delay(3000);
+Print("wifi_request");
 }
 
 void loop() {
 
 
-//============= M E G A  C Z Y T A  Z  E S P ==========//
-while(Serial1.available() > 0)
+//============= M E G A  C Z Y T A  Z  E S P =======================//
+while(Serial1.available() > 0)  //Jeśli zauwazysz czekający pakiet danych przychodzących od ESP
 {
-    int inChar = Serial1.read();
-    InputFromESP += (char)inChar;
-    if (inChar == '|') 
+    int inChar = Serial1.read();    //Zdejmuj z tego pakietu po jednym bajcie
+    InputFromESP += (char)inChar;   //Zmień ten bajt na chara i dodaj go do zmiennej
+    if (inChar == '|')              //Gdy napotkasz bajt kończący przekaz
     {
-    InputFromESP = Przytnij(InputFromESP);
-    Serial.print("Odbieram z ESP:");
-    Serial.println(InputFromESP);
-    //======== METODY OBSŁUGUJĄCE INPUT Z ESP=====//
-    if(InputFromESP=="ODPOWIADAM NA TEST"){
-      Serial.print("Wypisuję jako MEGA:");
-      Serial.println("DZIAŁA!");
-    }
+    InputFromESP = Przytnij(InputFromESP);  //Obetnij bajt kończący bo zawadza
+    Serial.print("Odbieram z ESP:");        //Pokaż mi na serialu co odebrałes
+    Serial.println(InputFromESP);           
+    //======== METODY OBSŁUGUJĄCE INPUT Z ESP=====// //Obsłuż dane przychodzące z ESP
 
-    //============================================//
+    obsluga_zdarzenESP(InputFromESP);
+    
+    //===========================================//
     InputFromESP="";
     }
 }
-//=====================================================//
+////////////////////////////////////////////////////////////////////
+
+
+
+//========= M E G A  C Z Y T A  Z  P C===========================//
 while(Serial.available() > 0)
 {
     int inChar = Serial.read();
@@ -39,11 +44,13 @@ while(Serial.available() > 0)
     {
     Serial.print("Przesyłam do ESP:");
     Serial.println(InputFromCOM);
-    //======== METODY OBSŁUGUJĄCE INPUT Z ESP=====//
+    //======== METODY OBSŁUGUJĄCE INPUT Z PC=====//
+      obsluga_zdarzenCOM(InputFromCOM);
       Print(InputFromCOM);
     //============================================//
     InputFromCOM="";
     }
 }
+////////////////////////////////////////////////////////////////////
 
 }
