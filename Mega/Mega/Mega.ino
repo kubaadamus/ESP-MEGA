@@ -21,7 +21,7 @@ while(Serial1.available() > 0)  //Jeśli zauwazysz czekający pakiet danych przy
     if (inChar == '|')              //Gdy napotkasz bajt kończący przekaz
     {
     InputFromESP = Przytnij(InputFromESP);  //Obetnij bajt kończący bo zawadza
-    Serial.print("Odbieram z ESP:");        //Pokaż mi na serialu co odebrałes
+    Serial.print("MEGA odbiera z ESP:");        //Pokaż mi na serialu co odebrałes
     Serial.println(InputFromESP);           
     //======== METODY OBSŁUGUJĄCE INPUT Z ESP=====// //Obsłuż dane przychodzące z ESP
 
@@ -42,11 +42,11 @@ while(Serial.available() > 0)
     InputFromCOM += (char)inChar;
     if (inChar == '\n') 
     {
-    Serial.print("Przesyłam do ESP:");
+    Serial.print("MEGA odbiera z COM:");
     Serial.println(InputFromCOM);
     //======== METODY OBSŁUGUJĄCE INPUT Z PC=====//
       obsluga_zdarzenCOM(InputFromCOM);
-      Print(InputFromCOM);
+      //Print(InputFromCOM);
     //============================================//
     InputFromCOM="";
     }
