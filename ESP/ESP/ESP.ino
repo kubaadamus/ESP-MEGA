@@ -4,8 +4,6 @@ Serial.begin(115200);
 }
 
 void loop() {
-Print(millis());
-delay(10);
 
 
 

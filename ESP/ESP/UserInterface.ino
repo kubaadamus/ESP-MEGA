@@ -4,9 +4,17 @@ void user_interface(String InputFromMEGA)
     {
       Print("ODPOWIADAM NA TEST");
     }
-     if((InputFromMEGA=="INFO"))
+    else if((InputFromMEGA=="INFO"))
     {
       Print("PODAJĘ CENNE INFORMACJE");
+    }
+    else if((InputFromMEGA=="wifi_setup"))
+    {
+      Print("Uruchamiam wifi_setup");
+      wifi_setup();
+    }
+    else{
+      Print("ESP nie rozpoznaje komendy: "+InputFromMEGA);
     }
 }
 

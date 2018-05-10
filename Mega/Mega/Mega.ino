@@ -18,9 +18,11 @@ while(Serial1.available() > 0)
     if (inChar == '|') 
     {
     InputFromESP = Przytnij(InputFromESP);
+    Serial.print("Odbieram z ESP:");
     Serial.println(InputFromESP);
     //======== METODY OBSŁUGUJĄCE INPUT Z ESP=====//
     if(InputFromESP=="ODPOWIADAM NA TEST"){
+      Serial.print("Wypisuję jako MEGA:");
       Serial.println("DZIAŁA!");
     }
 
@@ -33,12 +35,12 @@ while(Serial.available() > 0)
 {
     int inChar = Serial.read();
     InputFromCOM += (char)inChar;
-    if (inChar == '|') 
+    if (inChar == '\n') 
     {
+    Serial.print("Przesyłam do ESP:");
     Serial.println(InputFromCOM);
     //======== METODY OBSŁUGUJĄCE INPUT Z ESP=====//
       Print(InputFromCOM);
-
     //============================================//
     InputFromCOM="";
     }
