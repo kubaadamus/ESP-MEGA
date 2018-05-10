@@ -1,13 +1,18 @@
+#include <SD.h>
+#include <SPI.h>
+
 String InputFromESP=""; //Dane ESP -> MEGA
 String InputFromCOM=""; //Dane Serial -> MEGA
 void setup() {
 Serial1.begin(115200); //Serial pomiędzy ESP - MEGA
 Serial.begin(115200); //Serial pomiędzy PC - MEGA
-
 pinMode(LED_BUILTIN,OUTPUT); //dioda wbudowana - debug
 
+
 delay(3000);
+Serial.println("MEGA wysyła do ESP wifi_request");
 Print("wifi_request");
+
 }
 
 void loop() {

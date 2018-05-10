@@ -6,8 +6,8 @@ if(InputFromESP=="ODPOWIADAM NA TEST"){
 }
 else if(InputFromESP=="wifi_request"){
   delay(500);
-  Serial.print("MEGA wysyła dane połączenia do ESP:");
-  Print("82.160.252.229:16010");
+  Serial.println("MEGA wysyła dane połączenia do ESP:"+sd_read());
+  Print(sd_read());
 }
 }
 

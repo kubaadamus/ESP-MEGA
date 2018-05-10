@@ -1,8 +1,8 @@
-String wifi_coordinates_array[5];
+String wifi_coordinates_array[2];
 void wifi_connect(String wifi_coordinates){
-  Print("Lacze z wifi za pomoca danych:"+wifi_coordinates);
+  
 
-  for(int i=0; i<5; i++){wifi_coordinates_array[i]="";}
+  for(int i=0; i<2; i++){wifi_coordinates_array[i]="";}
 
   int index=0;
   for(int i=0; i<wifi_coordinates.length(); i++) // przelec przez całe wifi coordinates
@@ -16,9 +16,9 @@ void wifi_connect(String wifi_coordinates){
     }
   }
 
-  Print("Wypisuje tabele coordinatow");
+  Print("Lacze z wifi za pomoca danych:");
 
-  for(int i=0; i<5; i++)
+  for(int i=0; i<2; i++)
   {
     Print(wifi_coordinates_array[i]);
   }
