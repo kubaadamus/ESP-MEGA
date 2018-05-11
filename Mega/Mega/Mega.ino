@@ -48,10 +48,11 @@ while(Serial.available() > 0)
     if (inChar == '\n') 
     {
     Serial.print("MEGA odbiera z COM:");
+    InputFromCOM = Przytnij(InputFromCOM);  //Obetnij bajt kończący bo zawadza
     Serial.println(InputFromCOM);
     //======== METODY OBSŁUGUJĄCE INPUT Z PC=====//
       obsluga_zdarzenCOM(InputFromCOM);
-      //Print(InputFromCOM);
+      Print(InputFromCOM);
     //============================================//
     InputFromCOM="";
     }

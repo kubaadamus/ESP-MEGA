@@ -21,8 +21,23 @@ void user_interface(String InputFromMEGA)
     {
       wifi_request();
     }
+    else if((InputFromMEGA=="wifi_check"))
+    {
+      wifi_check();
+    }
+    else if((InputFromMEGA=="ftp_connect"))
+    {
+      Print("ESP odbiera z ftp" + ftp_connect());
+    }
     else{
       Print("ESP nie rozpoznaje komendy: "+InputFromMEGA);
     }
+}
+
+
+
+void kreska()
+{
+  Print("=========================================");
 }
 

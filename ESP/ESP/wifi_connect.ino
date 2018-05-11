@@ -1,4 +1,17 @@
+//POŁĄCZENIE WIFI//
+String host="";
+String dataClient;
+String dataServer;
+bool ServerSend=false;
+bool ServerReceive=false;
+WiFiClient client;
+WiFiServer server(16010);
+
+
 String wifi_coordinates_array[2];
+char* ssid;
+char* password;
+
 void wifi_connect(String wifi_coordinates){
   
 
@@ -22,5 +35,23 @@ void wifi_connect(String wifi_coordinates){
   {
     Print(wifi_coordinates_array[i]);
   }
+
+  wifi_coordinates_array[0].toCharArray(ssid, wifi_coordinates_array[0].length());
+  wifi_coordinates_array[0].toCharArray(password, wifi_coordinates_array[1].length());
+  WiFi.begin(ssid, password);
+  while (WiFi.status() != WL_CONNECTED) 
+  {
+    delay(500);
+    Print(".");
+  }
+    Print("Połączono");
+    Print(WiFi.localIP());
 }
 
+void wifi_check()
+{
+  kreska();
+  Print("Połączono");
+  Print(WiFi.localIP());
+  kreska();
+}

@@ -15,8 +15,6 @@ else if(InputFromESP=="wifi_request"){
 
 
 void obsluga_zdarzenCOM(String InputFromCOM){
-if(InputFromCOM=="biacz"){
-Print("wifi_request");
-}
+
 }
 

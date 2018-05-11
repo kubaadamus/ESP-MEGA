@@ -1,5 +1,11 @@
-String InputFromMEGA="";
+#include "ESP8266WiFi.h"
+#include <ESP8266HTTPClient.h>
+#include <WiFiClient.h>
+#include <WiFiServer.h>
 
+
+
+String InputFromMEGA="";
 void setup() {
 Serial.begin(115200);
 }
