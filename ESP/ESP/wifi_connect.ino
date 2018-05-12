@@ -1,13 +1,3 @@
-//POŁĄCZENIE WIFI//
-String host="";
-String dataClient;
-String dataServer;
-bool ServerSend=false;
-bool ServerReceive=false;
-WiFiClient client;
-WiFiServer server(16010);
-
-
 String wifi_coordinates_array[2];
 char* ssid;
 char* password;
@@ -46,6 +36,7 @@ void wifi_connect(String wifi_coordinates){
   }
     Print("Połączono");
     Print(WiFi.localIP());
+    Print("ftp_request"); // ESP prosi Megę o pozwolenie na wykonanie ftp_connecta
 }
 
 void wifi_check()

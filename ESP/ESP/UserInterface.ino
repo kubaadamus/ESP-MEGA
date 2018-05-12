@@ -28,6 +28,15 @@ void user_interface(String InputFromMEGA)
     else if((InputFromMEGA=="ftp_connect"))
     {
       Print("ESP odbiera z ftp" + ftp_connect());
+      Print("server_request");
+    }
+    else if((InputFromMEGA=="server_connect"))
+    {
+      server_connect();
+    }
+    else if((InputFromMEGA=="server_coordinates"))
+    {
+      server_coordinates();
     }
     else{
       Print("ESP nie rozpoznaje komendy: "+InputFromMEGA);
