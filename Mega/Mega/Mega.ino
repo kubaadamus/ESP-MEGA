@@ -1,18 +1,31 @@
 #include <SD.h>
 #include <SPI.h>
+#include <Servo.h>
 #define seconds() (millis()/1000)
 long long int Timer1=0;
 String InputFromESP=""; //Dane ESP -> MEGA
 String InputFromCOM=""; //Dane Serial -> MEGA
+//DEKLARACJE SERWOMECHANIZMÓW//
+Servo s1;
+Servo s2;
+Servo s3;
+//------//
+
+
+
 void setup() {
 Serial1.begin(115200); //Serial pomiędzy ESP - MEGA
 Serial.begin(115200); //Serial pomiędzy PC - MEGA
 pinMode(LED_BUILTIN,OUTPUT); //dioda wbudowana - debug
 
-
+//SETUP SERWOMECHANIZMÓW//
+s1.attach(2);
+s2.attach(3);
+s3.attach(4);
+//---------------------//
 delay(3000);
 Serial.println("MEGA wysyła do ESP wifi_request");
-Print("wifi_request");
+Print("wifi_request"); // ESP jesli jest połączone z serwerem to nic sobie nie zrobi z wifi requesta :) czyli jest git!
 
 }
 

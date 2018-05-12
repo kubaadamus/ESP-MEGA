@@ -110,110 +110,62 @@ namespace Async_Serwer_TCP_IP
         }
         private void LED_ON_BTN_Click(object sender, EventArgs e)
         {
-            mServer.SendToAll(("led_on").Trim());
-            txtConsole.AppendText(string.Format("Sent to clients: {0}", ("led_on").ToString()));
-            txtConsole.AppendText(Environment.NewLine);
-            textMessage.Clear();
-            textMessage.Focus();
+            WyslijDoArduino("led_on");
         }
 
         private void LED_OFF_BTN_Click(object sender, EventArgs e)
         {
-            mServer.SendToAll(("led_off").Trim());
-            txtConsole.AppendText(string.Format("Sent to clients: {0}", ("led_off").ToString()));
-            txtConsole.AppendText(Environment.NewLine);
-            textMessage.Clear();
-            textMessage.Focus();
+            WyslijDoArduino("led_off");
         }
 
         private void Serwo_0_Click(object sender, EventArgs e)
         {
-            mServer.SendToAll(("A.SERVO(" + 0 + ")").Trim());
-            txtConsole.AppendText(string.Format("Sent to clients: {0}", ("A.SERVO(" + 0 + ")").ToString()));
-            txtConsole.AppendText(Environment.NewLine);
-            textMessage.Clear();
-            textMessage.Focus();
+            WyslijDoArduino("srv:0");
         }
 
         private void Serwo_20_Click(object sender, EventArgs e)
         {
-            mServer.SendToAll(("A.SERVO(" + 20 + ")").Trim());
-            txtConsole.AppendText(string.Format("Sent to clients: {0}", ("A.SERVO(" + 20 + ")").ToString()));
-            txtConsole.AppendText(Environment.NewLine);
-            textMessage.Clear();
-            textMessage.Focus();
+            WyslijDoArduino("srv:20");
         }
 
         private void Serwo_40_Click(object sender, EventArgs e)
         {
-            mServer.SendToAll(("A.SERVO(" + 40 + ")").Trim());
-            txtConsole.AppendText(string.Format("Sent to clients: {0}", ("A.SERVO(" + 40 + ")").ToString()));
-            txtConsole.AppendText(Environment.NewLine);
-            textMessage.Clear();
-            textMessage.Focus();
+            WyslijDoArduino("srv:40");
         }
 
         private void Serwo_60_Click(object sender, EventArgs e)
         {
-            mServer.SendToAll(("A.SERVO(" + 60 + ")").Trim());
-            txtConsole.AppendText(string.Format("Sent to clients: {0}", ("A.SERVO(" + 60 + ")").ToString()));
-            txtConsole.AppendText(Environment.NewLine);
-            textMessage.Clear();
-            textMessage.Focus();
+            WyslijDoArduino("srv:60");
         }
 
         private void Serwo_80_Click(object sender, EventArgs e)
         {
-            mServer.SendToAll(("A.SERVO(" + 80 + ")").Trim());
-            txtConsole.AppendText(string.Format("Sent to clients: {0}", ("A.SERVO(" + 80 + ")").ToString()));
-            txtConsole.AppendText(Environment.NewLine);
-            textMessage.Clear();
-            textMessage.Focus();
+            WyslijDoArduino("srv:80");
         }
 
         private void Serwo_100_Click(object sender, EventArgs e)
         {
-            mServer.SendToAll(("A.SERVO(" + 100 + ")").Trim());
-            txtConsole.AppendText(string.Format("Sent to clients: {0}", ("A.SERVO(" + 100 + ")").ToString()));
-            txtConsole.AppendText(Environment.NewLine);
-            textMessage.Clear();
-            textMessage.Focus();
+            WyslijDoArduino("srv:100");
         }
 
         private void Serwo_120_Click(object sender, EventArgs e)
         {
-            mServer.SendToAll(("A.SERVO(" + 120 + ")").Trim());
-            txtConsole.AppendText(string.Format("Sent to clients: {0}", ("A.SERVO(" + 120 + ")").ToString()));
-            txtConsole.AppendText(Environment.NewLine);
-            textMessage.Clear();
-            textMessage.Focus();
+            WyslijDoArduino("srv:120");
         }
 
         private void Serwo_140_Click(object sender, EventArgs e)
         {
-            mServer.SendToAll(("A.SERVO(" + 140 + ")").Trim());
-            txtConsole.AppendText(string.Format("Sent to clients: {0}", ("A.SERVO(" + 140 + ")").ToString()));
-            txtConsole.AppendText(Environment.NewLine);
-            textMessage.Clear();
-            textMessage.Focus();
+            WyslijDoArduino("srv:140");
         }
 
         private void Serwo_160_Click(object sender, EventArgs e)
         {
-            mServer.SendToAll(("A.SERVO(" + 160 + ")").Trim());
-            txtConsole.AppendText(string.Format("Sent to clients: {0}", ("A.SERVO(" + 160 + ")").ToString()));
-            txtConsole.AppendText(Environment.NewLine);
-            textMessage.Clear();
-            textMessage.Focus();
+            WyslijDoArduino("srv:160");
         }
 
         private void Serwo_180_Click(object sender, EventArgs e)
         {
-            mServer.SendToAll(("A.SERVO(" + 180 + ")").Trim());
-            txtConsole.AppendText(string.Format("Sent to clients: {0}", ("A.SERVO(" + 180 + ")").ToString()));
-            txtConsole.AppendText(Environment.NewLine);
-            textMessage.Clear();
-            textMessage.Focus();
+            WyslijDoArduino("srv:180");
         }
 
         private void txtConsole_TextChanged(object sender, EventArgs e)
