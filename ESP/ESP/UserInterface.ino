@@ -34,10 +34,6 @@ void user_interface(String InputFromMEGA)
     {
       server_connect();
     }
-    else if((InputFromMEGA=="server_coordinates"))
-    {
-      server_coordinates();
-    }
     else{
       Print("ESP nie rozpoznaje komendy: "+InputFromMEGA);
     }
