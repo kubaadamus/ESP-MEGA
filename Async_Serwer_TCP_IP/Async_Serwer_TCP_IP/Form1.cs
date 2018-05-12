@@ -95,8 +95,8 @@ namespace Async_Serwer_TCP_IP
         }
         private void LED_ON_BTN_Click(object sender, EventArgs e)
         {
-            mServer.SendToAll(("A.LED(ON)").Trim());
-            txtConsole.AppendText(string.Format("Sent to clients: {0}", ("A.LED(ON)").ToString()));
+            mServer.SendToAll(("led_on").Trim());
+            txtConsole.AppendText(string.Format("Sent to clients: {0}", ("led_on").ToString()));
             txtConsole.AppendText(Environment.NewLine);
             textMessage.Clear();
             textMessage.Focus();
@@ -104,8 +104,8 @@ namespace Async_Serwer_TCP_IP
 
         private void LED_OFF_BTN_Click(object sender, EventArgs e)
         {
-            mServer.SendToAll(("A.LED(OFF)").Trim());
-            txtConsole.AppendText(string.Format("Sent to clients: {0}", ("A.LED(OFF)").ToString()));
+            mServer.SendToAll(("led_off").Trim());
+            txtConsole.AppendText(string.Format("Sent to clients: {0}", ("led_off").ToString()));
             txtConsole.AppendText(Environment.NewLine);
             textMessage.Clear();
             textMessage.Focus();

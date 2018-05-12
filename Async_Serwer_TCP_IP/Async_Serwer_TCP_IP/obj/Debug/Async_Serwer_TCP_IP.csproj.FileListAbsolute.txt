@@ -21,3 +21,15 @@ D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP
 D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.csproj.CoreCompileInputs.cache
 D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.exe
 D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.pdb
+C:\Users\Jakub\Desktop\ESP-MEGA\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\bin\Debug\Async_Serwer_TCP_IP.exe.config
+C:\Users\Jakub\Desktop\ESP-MEGA\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\bin\Debug\Async_Serwer_TCP_IP.exe
+C:\Users\Jakub\Desktop\ESP-MEGA\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\bin\Debug\Async_Serwer_TCP_IP.pdb
+C:\Users\Jakub\Desktop\ESP-MEGA\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\bin\Debug\LahoreSocketAsync.dll
+C:\Users\Jakub\Desktop\ESP-MEGA\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\bin\Debug\LahoreSocketAsync.pdb
+C:\Users\Jakub\Desktop\ESP-MEGA\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.csprojResolveAssemblyReference.cache
+C:\Users\Jakub\Desktop\ESP-MEGA\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.Form1.resources
+C:\Users\Jakub\Desktop\ESP-MEGA\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.Properties.Resources.resources
+C:\Users\Jakub\Desktop\ESP-MEGA\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.csproj.GenerateResource.Cache
+C:\Users\Jakub\Desktop\ESP-MEGA\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.csproj.CoreCompileInputs.cache
+C:\Users\Jakub\Desktop\ESP-MEGA\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.exe
+C:\Users\Jakub\Desktop\ESP-MEGA\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.pdb
