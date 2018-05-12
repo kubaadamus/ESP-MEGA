@@ -9,3 +9,9 @@ D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\LahoreSocketAsyn
 D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\LahoreSocketAsync\obj\Debug\LahoreSocketAsync.csproj.CoreCompileInputs.cache
 D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\LahoreSocketAsync\obj\Debug\LahoreSocketAsync.dll
 D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\LahoreSocketAsync\obj\Debug\LahoreSocketAsync.pdb
+C:\Users\Jakub\Desktop\ESP-MEGA\Async_Serwer_TCP_IP\LahoreSocketAsync\bin\Debug\LahoreSocketAsync.dll
+C:\Users\Jakub\Desktop\ESP-MEGA\Async_Serwer_TCP_IP\LahoreSocketAsync\bin\Debug\LahoreSocketAsync.pdb
+C:\Users\Jakub\Desktop\ESP-MEGA\Async_Serwer_TCP_IP\LahoreSocketAsync\obj\Debug\LahoreSocketAsync.csprojResolveAssemblyReference.cache
+C:\Users\Jakub\Desktop\ESP-MEGA\Async_Serwer_TCP_IP\LahoreSocketAsync\obj\Debug\LahoreSocketAsync.csproj.CoreCompileInputs.cache
+C:\Users\Jakub\Desktop\ESP-MEGA\Async_Serwer_TCP_IP\LahoreSocketAsync\obj\Debug\LahoreSocketAsync.dll
+C:\Users\Jakub\Desktop\ESP-MEGA\Async_Serwer_TCP_IP\LahoreSocketAsync\obj\Debug\LahoreSocketAsync.pdb

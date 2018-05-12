@@ -60,6 +60,21 @@ namespace Async_Serwer_TCP_IP
             {
                 txtConsole.AppendText(string.Format("{0} - Received from: {3}, {1}{2}", DateTime.Now, trea.TextReceived, Environment.NewLine, trea.ClientWhoSentText));
                 txtConsole.AppendText(Environment.NewLine);
+
+
+                String TEKST_Z_ARDUINO = trea.TextReceived.Replace("\0", "");
+
+                if(TEKST_Z_ARDUINO== "Server_connection_testing")
+                {
+                    WyslijDoArduino("Server_connection_ok");
+                }
+
+
+
+
+
+
+
             }
 
             //EKSPERYMENT
@@ -215,6 +230,15 @@ namespace Async_Serwer_TCP_IP
         {
             mServer.SendToAll(("A.PIEZO(" + hScrollBar1.Value*110 + ")").Trim());
             txtConsole.AppendText(string.Format("Sent to clients: {0}", ("A.PIEZO(" + hScrollBar1.Value*110 + ")").ToString()));
+            txtConsole.AppendText(Environment.NewLine);
+            textMessage.Clear();
+            textMessage.Focus();
+        }
+
+        private void WyslijDoArduino(String wyslij)
+        {
+            mServer.SendToAll((wyslij).Trim());
+            txtConsole.AppendText(string.Format("Sent to clients: {0}", (wyslij).ToString()));
             txtConsole.AppendText(Environment.NewLine);
             textMessage.Clear();
             textMessage.Focus();

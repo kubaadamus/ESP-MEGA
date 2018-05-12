@@ -28,12 +28,16 @@ void server_read()
       client.print(InputRead);
       InputRead="";
     }
-  }
-    
+  } 
 
+if (!client.connected()) {
+    Print("disconnected_from_server, reconnecting...");
+    server_connect();
+    delay(1000);
+}
 
-    
-  }
+  
+  } 
 }
 
 

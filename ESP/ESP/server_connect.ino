@@ -48,17 +48,13 @@ int Attempt=0;
 while(!client.connect(server, Port.toInt()))
 {
   Print(".");
-  delay(500);
+  delay(1000);
   Attempt++;
-  if(Attempt>=5)
-  {
-    Print("CONNECTION FAILED BECAUSE OF: REASONS.");
-    return;
-  }
 }
 
       Print("connected");
       client.print("ESP8266 Connected to the server");
+      
 
       delay(500);
       server_read();

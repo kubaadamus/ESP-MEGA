@@ -1,6 +1,7 @@
 #include <SD.h>
 #include <SPI.h>
-
+#define seconds() (millis()/1000)
+long long int Timer1=0;
 String InputFromESP=""; //Dane ESP -> MEGA
 String InputFromCOM=""; //Dane Serial -> MEGA
 void setup() {
@@ -58,5 +59,7 @@ while(Serial.available() > 0)
     }
 }
 ////////////////////////////////////////////////////////////////////
+
+
 
 }
