@@ -17,6 +17,11 @@ if(InputFromESP=="ODPOWIADAM NA TEST"){
   delay(500);
   Print("server_connect");
   }
+  else if(InputFromESP=="test"){ // prosty test
+  delay(500);
+  Print("test OK");
+  Serial.println("test OK");
+  }
 }
 
 

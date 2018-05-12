@@ -60,6 +60,9 @@ while(!client.connect(server, Port.toInt()))
       Print("connected");
       client.print("ESP8266 Connected to the server");
 
+      delay(500);
+      server_read();
+
 }
 
 
