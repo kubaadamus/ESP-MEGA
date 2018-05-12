@@ -22,7 +22,7 @@ while(!client.connect(server, Port.toInt()))
   Attempt++;
 
         //CO około 5 minut ATTEMPTÓW POBIERZ Z SIECI NOWE KOORDYNATY SERWERA//
-      if(Attempt>=10)
+      if(Attempt>=300)
       {
         Print("Pobieram nowe koordynaty z serwera");
         get_coordinates_from_ftp();
