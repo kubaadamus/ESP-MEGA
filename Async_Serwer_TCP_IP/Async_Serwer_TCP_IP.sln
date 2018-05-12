@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async_Serwer_TCP_IP", "Async_Serwer_TCP_IP\Async_Serwer_TCP_IP.csproj", "{AFBD2802-3A0F-4334-8F8E-3CC1DB72AA77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LahoreSocketAsync", "LahoreSocketAsync\LahoreSocketAsync.csproj", "{198F248D-C8CA-4731-85F4-99E9E8044B93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFBD2802-3A0F-4334-8F8E-3CC1DB72AA77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFBD2802-3A0F-4334-8F8E-3CC1DB72AA77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFBD2802-3A0F-4334-8F8E-3CC1DB72AA77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFBD2802-3A0F-4334-8F8E-3CC1DB72AA77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{198F248D-C8CA-4731-85F4-99E9E8044B93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{198F248D-C8CA-4731-85F4-99E9E8044B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{198F248D-C8CA-4731-85F4-99E9E8044B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{198F248D-C8CA-4731-85F4-99E9E8044B93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

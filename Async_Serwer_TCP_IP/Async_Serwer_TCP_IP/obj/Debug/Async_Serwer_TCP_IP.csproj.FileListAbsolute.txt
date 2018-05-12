@@ -1,0 +1,23 @@
+D:\Projekty C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\bin\Debug\Async_Serwer_TCP_IP.exe.config
+D:\Projekty C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\bin\Debug\Async_Serwer_TCP_IP.exe
+D:\Projekty C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\bin\Debug\Async_Serwer_TCP_IP.pdb
+D:\Projekty C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.csprojResolveAssemblyReference.cache
+D:\Projekty C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.Properties.Resources.resources
+D:\Projekty C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.csproj.GenerateResource.Cache
+D:\Projekty C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.exe
+D:\Projekty C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.pdb
+D:\Projekty C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\bin\Debug\LahoreSocketAsync.dll
+D:\Projekty C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\bin\Debug\LahoreSocketAsync.pdb
+D:\Projekty C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.Form1.resources
+D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\bin\Debug\Async_Serwer_TCP_IP.exe.config
+D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\bin\Debug\Async_Serwer_TCP_IP.exe
+D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\bin\Debug\Async_Serwer_TCP_IP.pdb
+D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\bin\Debug\LahoreSocketAsync.dll
+D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\bin\Debug\LahoreSocketAsync.pdb
+D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.csprojResolveAssemblyReference.cache
+D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.Form1.resources
+D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.Properties.Resources.resources
+D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.csproj.GenerateResource.Cache
+D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.csproj.CoreCompileInputs.cache
+D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.exe
+D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP\Async_Serwer_TCP_IP\Async_Serwer_TCP_IP\obj\Debug\Async_Serwer_TCP_IP.pdb

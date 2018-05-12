@@ -2,3 +2,7 @@ Jesli chcesz wpisywaæ w serial port stringi i odbieraæ w arduino za pomoc¹ if (i
 
 
 Urz¹dzenia komunikuj¹ siê miêdzy sob¹ WY£¥CZNIE za pomoc¹ funkcji Print(String)!! Z uzytkownikiem komunikuje siê wy³¹cznie Mega za pomoc¹ Serial.print (nie Serial1.print)!
+
+Jeœli nagle esp nie mo¿e po³¹czyæ siê z serwerem z niewiadomych powodów (na przyk³ad po restarcie routera wifi)
+1. Skonfiguruj porty na nowo w 192.168.0.1 i ZRESTARTUJ ROUTER!
+2. wejdŸ w zaawansowane ustawienia firewalla windowsa i dodaj nowe regu³y dla tcp i udp w przychodz¹cych i wychodz¹cych, otwieraj¹ce porty.

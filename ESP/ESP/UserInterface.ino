@@ -8,14 +8,10 @@ void user_interface(String InputFromMEGA)
     {
       Print("PODAJĘ CENNE INFORMACJE");
     }
-    else if((InputFromMEGA=="wifi_setup"))
+    else if((InputFromMEGA=="wifi_setup")) // wifi setup czyli cała procedura podłączania się do wifi
     {
       Print("Uruchamiam wifi_setup");
       wifi_setup();
-    }
-    else if((InputFromMEGA=="wifi_connect"))
-    {
-      Print("Uruchamiam procedure wifi_connect!");
     }
     else if((InputFromMEGA=="wifi_request"))
     {
