@@ -20,13 +20,16 @@ namespace Async_Serwer_TCP_IP
         static bool exitFlag = false;
         Random rand = new Random();
 
+        int[] TablicaDlaArduino = new int[60];
 
         private void TimerEventProcessor(Object myObject,
                                         EventArgs myEventArgs)
         {
-            
-
-            WyslijDoArduino("srv:"+rand.Next(0,255));
+            if(checkBox1.Checked)
+            {
+                WyslijDoArduino();
+            }
+           
         }
 
 
@@ -48,7 +51,7 @@ namespace Async_Serwer_TCP_IP
             myTimer.Tick += new EventHandler(TimerEventProcessor);
 
             // Sets the timer interval to 5 seconds.
-            myTimer.Interval = 500;
+            myTimer.Interval = 300;
             myTimer.Start();
 
         }
@@ -92,10 +95,6 @@ namespace Async_Serwer_TCP_IP
 
                 String TEKST_Z_ARDUINO = trea.TextReceived.Replace("\0", "");
 
-                if(TEKST_Z_ARDUINO== "Server_connection_testing")
-                {
-                    WyslijDoArduino("Server_connection_ok");
-                }
 
 
 
@@ -138,62 +137,12 @@ namespace Async_Serwer_TCP_IP
         }
         private void LED_ON_BTN_Click(object sender, EventArgs e)
         {
-            WyslijDoArduino("led_on");
+            WyslijDoArduino();
         }
 
         private void LED_OFF_BTN_Click(object sender, EventArgs e)
         {
-            WyslijDoArduino("led_off");
-        }
-
-        private void Serwo_0_Click(object sender, EventArgs e)
-        {
-            WyslijDoArduino("srv:0");
-        }
-
-        private void Serwo_20_Click(object sender, EventArgs e)
-        {
-            WyslijDoArduino("srv:20");
-        }
-
-        private void Serwo_40_Click(object sender, EventArgs e)
-        {
-            WyslijDoArduino("srv:40");
-        }
-
-        private void Serwo_60_Click(object sender, EventArgs e)
-        {
-            WyslijDoArduino("srv:60");
-        }
-
-        private void Serwo_80_Click(object sender, EventArgs e)
-        {
-            WyslijDoArduino("srv:80");
-        }
-
-        private void Serwo_100_Click(object sender, EventArgs e)
-        {
-            WyslijDoArduino("srv:100");
-        }
-
-        private void Serwo_120_Click(object sender, EventArgs e)
-        {
-            WyslijDoArduino("srv:120");
-        }
-
-        private void Serwo_140_Click(object sender, EventArgs e)
-        {
-            WyslijDoArduino("srv:140");
-        }
-
-        private void Serwo_160_Click(object sender, EventArgs e)
-        {
-            WyslijDoArduino("srv:160");
-        }
-
-        private void Serwo_180_Click(object sender, EventArgs e)
-        {
-            WyslijDoArduino("srv:180");
+            WyslijDoArduino();
         }
 
         private void txtConsole_TextChanged(object sender, EventArgs e)
@@ -215,10 +164,11 @@ namespace Async_Serwer_TCP_IP
             textMessage.Focus();
         }
 
-        private void WyslijDoArduino(String wyslij)
+        private void WyslijDoArduino()
         {
-            mServer.SendToAll((wyslij).Trim());
-            txtConsole.AppendText(string.Format("Sent to clients: {0}", (wyslij).ToString()));
+            string result = string.Join("", TablicaDlaArduino);
+            mServer.SendToAll(result);
+            txtConsole.AppendText(string.Format("Sent to clients: {0}", (result)));
             txtConsole.AppendText(Environment.NewLine);
             textMessage.Clear();
             textMessage.Focus();
@@ -227,6 +177,32 @@ namespace Async_Serwer_TCP_IP
         private void hScrollBar2_ValueChanged(object sender, EventArgs e)
         {
             myTimer.Interval = hScrollBar2.Value;
+        }
+
+        private void vScrollBar1_ValueChanged(object sender, EventArgs e)
+        {
+            TablicaDlaArduino[0] = vScrollBar1.Value;
+           
+        }
+
+        private void vScrollBar2_ValueChanged(object sender, EventArgs e)
+        {
+            TablicaDlaArduino[1] = vScrollBar2.Value;
+        }
+
+        private void vScrollBar3_ValueChanged(object sender, EventArgs e)
+        {
+            TablicaDlaArduino[2] = vScrollBar3.Value;
+        }
+
+        private void vScrollBar4_ValueChanged(object sender, EventArgs e)
+        {
+            TablicaDlaArduino[3] = vScrollBar4.Value;
+        }
+
+        private void vScrollBar5_ValueChanged(object sender, EventArgs e)
+        {
+            TablicaDlaArduino[4] = vScrollBar5.Value;
         }
     }
 }

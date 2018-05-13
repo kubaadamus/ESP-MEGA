@@ -15,3 +15,7 @@ D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP CLIENT\Async Client Udemy\Async Clie
 D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP CLIENT\Async Client Udemy\Async Client Udemy\obj\Debug\Async Client Udemy.csproj.CoreCompileInputs.cache
 D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP CLIENT\Async Client Udemy\Async Client Udemy\obj\Debug\Async Client Udemy.exe
 D:\PROJEKTY\projekty_C#\Udemy_Socket_TCP_IP CLIENT\Async Client Udemy\Async Client Udemy\obj\Debug\Async Client Udemy.pdb
+C:\Users\Jakub\Desktop\ESP-MEGA\Async Client Udemy\Async Client Udemy\obj\Debug\Async Client Udemy.csprojResolveAssemblyReference.cache
+C:\Users\Jakub\Desktop\ESP-MEGA\Async Client Udemy\Async Client Udemy\obj\Debug\Async Client Udemy.csproj.CoreCompileInputs.cache
+C:\Users\Jakub\Desktop\ESP-MEGA\Async Client Udemy\Async Client Udemy\obj\Debug\Async Client Udemy.exe
+C:\Users\Jakub\Desktop\ESP-MEGA\Async Client Udemy\Async Client Udemy\obj\Debug\Async Client Udemy.pdb

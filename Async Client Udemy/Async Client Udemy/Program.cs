@@ -17,11 +17,12 @@ namespace Async_Client_Udemy
             Console.WriteLine("Welcome to socket Client Starter Eample :D");
             Console.WriteLine("Please type a valid server IP Address and press enter");
 
-            string strIPAddress = Console.ReadLine();
-            
+            string strIPAddress = "89.228.240.20";//Console.ReadLine();
+
+
 
             Console.WriteLine("Please Supply a Valid port Number 0 - 65335 and press Enter: ");
-            string strPortInput= Console.ReadLine();
+            string strPortInput = "16010";//Console.ReadLine();
             
 
             if (!client.SetServerIPAdress(strIPAddress) || !client.SetPortNumber(strPortInput))

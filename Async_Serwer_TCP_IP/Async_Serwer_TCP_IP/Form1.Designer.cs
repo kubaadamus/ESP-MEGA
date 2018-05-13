@@ -36,19 +36,20 @@
             this.txtConsole = new System.Windows.Forms.TextBox();
             this.LED_ON_BTN = new System.Windows.Forms.Button();
             this.LED_OFF_BTN = new System.Windows.Forms.Button();
-            this.Serwo_0 = new System.Windows.Forms.Button();
-            this.Serwo_20 = new System.Windows.Forms.Button();
-            this.Serwo_40 = new System.Windows.Forms.Button();
-            this.Serwo_60 = new System.Windows.Forms.Button();
-            this.Serwo_80 = new System.Windows.Forms.Button();
-            this.Serwo_100 = new System.Windows.Forms.Button();
-            this.Serwo_120 = new System.Windows.Forms.Button();
-            this.Serwo_140 = new System.Windows.Forms.Button();
-            this.Serwo_160 = new System.Windows.Forms.Button();
-            this.Serwo_180 = new System.Windows.Forms.Button();
             this.StatusCheckBox = new System.Windows.Forms.CheckBox();
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.hScrollBar2 = new System.Windows.Forms.HScrollBar();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
+            this.vScrollBar3 = new System.Windows.Forms.VScrollBar();
+            this.vScrollBar4 = new System.Windows.Forms.VScrollBar();
+            this.vScrollBar5 = new System.Windows.Forms.VScrollBar();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btnAcceptIncomingAsync
@@ -127,106 +128,6 @@
             this.LED_OFF_BTN.UseVisualStyleBackColor = true;
             this.LED_OFF_BTN.Click += new System.EventHandler(this.LED_OFF_BTN_Click);
             // 
-            // Serwo_0
-            // 
-            this.Serwo_0.Location = new System.Drawing.Point(12, 514);
-            this.Serwo_0.Name = "Serwo_0";
-            this.Serwo_0.Size = new System.Drawing.Size(75, 23);
-            this.Serwo_0.TabIndex = 9;
-            this.Serwo_0.Text = "0";
-            this.Serwo_0.UseVisualStyleBackColor = true;
-            this.Serwo_0.Click += new System.EventHandler(this.Serwo_0_Click);
-            // 
-            // Serwo_20
-            // 
-            this.Serwo_20.Location = new System.Drawing.Point(93, 514);
-            this.Serwo_20.Name = "Serwo_20";
-            this.Serwo_20.Size = new System.Drawing.Size(75, 23);
-            this.Serwo_20.TabIndex = 10;
-            this.Serwo_20.Text = "20";
-            this.Serwo_20.UseVisualStyleBackColor = true;
-            this.Serwo_20.Click += new System.EventHandler(this.Serwo_20_Click);
-            // 
-            // Serwo_40
-            // 
-            this.Serwo_40.Location = new System.Drawing.Point(174, 514);
-            this.Serwo_40.Name = "Serwo_40";
-            this.Serwo_40.Size = new System.Drawing.Size(75, 23);
-            this.Serwo_40.TabIndex = 11;
-            this.Serwo_40.Text = "40";
-            this.Serwo_40.UseVisualStyleBackColor = true;
-            this.Serwo_40.Click += new System.EventHandler(this.Serwo_40_Click);
-            // 
-            // Serwo_60
-            // 
-            this.Serwo_60.Location = new System.Drawing.Point(255, 514);
-            this.Serwo_60.Name = "Serwo_60";
-            this.Serwo_60.Size = new System.Drawing.Size(75, 23);
-            this.Serwo_60.TabIndex = 12;
-            this.Serwo_60.Text = "60";
-            this.Serwo_60.UseVisualStyleBackColor = true;
-            this.Serwo_60.Click += new System.EventHandler(this.Serwo_60_Click);
-            // 
-            // Serwo_80
-            // 
-            this.Serwo_80.Location = new System.Drawing.Point(336, 514);
-            this.Serwo_80.Name = "Serwo_80";
-            this.Serwo_80.Size = new System.Drawing.Size(75, 23);
-            this.Serwo_80.TabIndex = 13;
-            this.Serwo_80.Text = "80";
-            this.Serwo_80.UseVisualStyleBackColor = true;
-            this.Serwo_80.Click += new System.EventHandler(this.Serwo_80_Click);
-            // 
-            // Serwo_100
-            // 
-            this.Serwo_100.Location = new System.Drawing.Point(417, 514);
-            this.Serwo_100.Name = "Serwo_100";
-            this.Serwo_100.Size = new System.Drawing.Size(75, 23);
-            this.Serwo_100.TabIndex = 14;
-            this.Serwo_100.Text = "100";
-            this.Serwo_100.UseVisualStyleBackColor = true;
-            this.Serwo_100.Click += new System.EventHandler(this.Serwo_100_Click);
-            // 
-            // Serwo_120
-            // 
-            this.Serwo_120.Location = new System.Drawing.Point(498, 514);
-            this.Serwo_120.Name = "Serwo_120";
-            this.Serwo_120.Size = new System.Drawing.Size(75, 23);
-            this.Serwo_120.TabIndex = 15;
-            this.Serwo_120.Text = "120";
-            this.Serwo_120.UseVisualStyleBackColor = true;
-            this.Serwo_120.Click += new System.EventHandler(this.Serwo_120_Click);
-            // 
-            // Serwo_140
-            // 
-            this.Serwo_140.Location = new System.Drawing.Point(579, 514);
-            this.Serwo_140.Name = "Serwo_140";
-            this.Serwo_140.Size = new System.Drawing.Size(75, 23);
-            this.Serwo_140.TabIndex = 16;
-            this.Serwo_140.Text = "140";
-            this.Serwo_140.UseVisualStyleBackColor = true;
-            this.Serwo_140.Click += new System.EventHandler(this.Serwo_140_Click);
-            // 
-            // Serwo_160
-            // 
-            this.Serwo_160.Location = new System.Drawing.Point(661, 515);
-            this.Serwo_160.Name = "Serwo_160";
-            this.Serwo_160.Size = new System.Drawing.Size(75, 23);
-            this.Serwo_160.TabIndex = 17;
-            this.Serwo_160.Text = "160";
-            this.Serwo_160.UseVisualStyleBackColor = true;
-            this.Serwo_160.Click += new System.EventHandler(this.Serwo_160_Click);
-            // 
-            // Serwo_180
-            // 
-            this.Serwo_180.Location = new System.Drawing.Point(742, 515);
-            this.Serwo_180.Name = "Serwo_180";
-            this.Serwo_180.Size = new System.Drawing.Size(75, 23);
-            this.Serwo_180.TabIndex = 18;
-            this.Serwo_180.Text = "180";
-            this.Serwo_180.UseVisualStyleBackColor = true;
-            this.Serwo_180.Click += new System.EventHandler(this.Serwo_180_Click);
-            // 
             // StatusCheckBox
             // 
             this.StatusCheckBox.AutoSize = true;
@@ -251,31 +152,137 @@
             // 
             this.hScrollBar2.Location = new System.Drawing.Point(373, 627);
             this.hScrollBar2.Maximum = 2000;
-            this.hScrollBar2.Minimum = 100;
+            this.hScrollBar2.Minimum = 1;
             this.hScrollBar2.Name = "hScrollBar2";
             this.hScrollBar2.Size = new System.Drawing.Size(306, 17);
             this.hScrollBar2.TabIndex = 21;
             this.hScrollBar2.Value = 200;
             this.hScrollBar2.ValueChanged += new System.EventHandler(this.hScrollBar2_ValueChanged);
             // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.LargeChange = 1;
+            this.vScrollBar1.Location = new System.Drawing.Point(832, 25);
+            this.vScrollBar1.Maximum = 9;
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(35, 227);
+            this.vScrollBar1.TabIndex = 22;
+            this.vScrollBar1.ValueChanged += new System.EventHandler(this.vScrollBar1_ValueChanged);
+            // 
+            // vScrollBar2
+            // 
+            this.vScrollBar2.LargeChange = 1;
+            this.vScrollBar2.Location = new System.Drawing.Point(872, 25);
+            this.vScrollBar2.Maximum = 9;
+            this.vScrollBar2.Name = "vScrollBar2";
+            this.vScrollBar2.Size = new System.Drawing.Size(35, 227);
+            this.vScrollBar2.TabIndex = 23;
+            this.vScrollBar2.ValueChanged += new System.EventHandler(this.vScrollBar2_ValueChanged);
+            // 
+            // vScrollBar3
+            // 
+            this.vScrollBar3.LargeChange = 1;
+            this.vScrollBar3.Location = new System.Drawing.Point(912, 25);
+            this.vScrollBar3.Maximum = 9;
+            this.vScrollBar3.Name = "vScrollBar3";
+            this.vScrollBar3.Size = new System.Drawing.Size(35, 227);
+            this.vScrollBar3.TabIndex = 24;
+            this.vScrollBar3.ValueChanged += new System.EventHandler(this.vScrollBar3_ValueChanged);
+            // 
+            // vScrollBar4
+            // 
+            this.vScrollBar4.LargeChange = 1;
+            this.vScrollBar4.Location = new System.Drawing.Point(952, 25);
+            this.vScrollBar4.Maximum = 9;
+            this.vScrollBar4.Name = "vScrollBar4";
+            this.vScrollBar4.Size = new System.Drawing.Size(35, 227);
+            this.vScrollBar4.TabIndex = 25;
+            this.vScrollBar4.ValueChanged += new System.EventHandler(this.vScrollBar4_ValueChanged);
+            // 
+            // vScrollBar5
+            // 
+            this.vScrollBar5.LargeChange = 1;
+            this.vScrollBar5.Location = new System.Drawing.Point(992, 25);
+            this.vScrollBar5.Maximum = 9;
+            this.vScrollBar5.Name = "vScrollBar5";
+            this.vScrollBar5.Size = new System.Drawing.Size(35, 227);
+            this.vScrollBar5.TabIndex = 26;
+            this.vScrollBar5.ValueChanged += new System.EventHandler(this.vScrollBar5_ValueChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(838, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(20, 13);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "S1";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(878, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(20, 13);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "S2";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(918, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(20, 13);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "S3";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(958, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(20, 13);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "S4";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(998, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(20, 13);
+            this.label6.TabIndex = 31;
+            this.label6.Text = "S5";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(66, 531);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(45, 17);
+            this.checkBox1.TabIndex = 32;
+            this.checkBox1.Text = "GO!";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(825, 656);
+            this.ClientSize = new System.Drawing.Size(1398, 656);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.vScrollBar5);
+            this.Controls.Add(this.vScrollBar4);
+            this.Controls.Add(this.vScrollBar3);
+            this.Controls.Add(this.vScrollBar2);
+            this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.hScrollBar2);
             this.Controls.Add(this.hScrollBar1);
             this.Controls.Add(this.StatusCheckBox);
-            this.Controls.Add(this.Serwo_180);
-            this.Controls.Add(this.Serwo_160);
-            this.Controls.Add(this.Serwo_140);
-            this.Controls.Add(this.Serwo_120);
-            this.Controls.Add(this.Serwo_100);
-            this.Controls.Add(this.Serwo_80);
-            this.Controls.Add(this.Serwo_60);
-            this.Controls.Add(this.Serwo_40);
-            this.Controls.Add(this.Serwo_20);
-            this.Controls.Add(this.Serwo_0);
             this.Controls.Add(this.LED_OFF_BTN);
             this.Controls.Add(this.LED_ON_BTN);
             this.Controls.Add(this.txtConsole);
@@ -302,19 +309,20 @@
         private System.Windows.Forms.TextBox txtConsole;
         private System.Windows.Forms.Button LED_ON_BTN;
         private System.Windows.Forms.Button LED_OFF_BTN;
-        private System.Windows.Forms.Button Serwo_0;
-        private System.Windows.Forms.Button Serwo_20;
-        private System.Windows.Forms.Button Serwo_40;
-        private System.Windows.Forms.Button Serwo_60;
-        private System.Windows.Forms.Button Serwo_80;
-        private System.Windows.Forms.Button Serwo_100;
-        private System.Windows.Forms.Button Serwo_120;
-        private System.Windows.Forms.Button Serwo_140;
-        private System.Windows.Forms.Button Serwo_160;
-        private System.Windows.Forms.Button Serwo_180;
         private System.Windows.Forms.CheckBox StatusCheckBox;
         private System.Windows.Forms.HScrollBar hScrollBar1;
         private System.Windows.Forms.HScrollBar hScrollBar2;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
+        private System.Windows.Forms.VScrollBar vScrollBar2;
+        private System.Windows.Forms.VScrollBar vScrollBar3;
+        private System.Windows.Forms.VScrollBar vScrollBar4;
+        private System.Windows.Forms.VScrollBar vScrollBar5;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

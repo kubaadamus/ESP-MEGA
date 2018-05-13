@@ -7,6 +7,8 @@ String InputFromCOM=""; //Dane Serial -> MEGA
 Servo s1;
 Servo s2;
 Servo s3;
+Servo s4;
+Servo s5;
 //------//
 
 
@@ -15,13 +17,18 @@ void setup() {
 Serial1.begin(115200); //Serial pomiędzy ESP - MEGA
 Serial.begin(115200); //Serial pomiędzy PC - MEGA
 pinMode(LED_BUILTIN,OUTPUT); //dioda wbudowana - debug
-pinMode(22,INPUT);
-pinMode(7,OUTPUT);
+pinMode(2,OUTPUT);
+pinMode(3,OUTPUT);
+pinMode(4,OUTPUT);
+pinMode(5,OUTPUT);
+pinMode(6,OUTPUT);
 
 //SETUP SERWOMECHANIZMÓW//
 s1.attach(2);
 s2.attach(3);
 s3.attach(4);
+s4.attach(5);
+s5.attach(6);
 //---------------------//
 delay(3000);
 Serial.println("MEGA wysyła do ESP wifi_request");
