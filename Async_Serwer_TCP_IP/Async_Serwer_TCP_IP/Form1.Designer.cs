@@ -48,6 +48,7 @@
             this.Serwo_180 = new System.Windows.Forms.Button();
             this.StatusCheckBox = new System.Windows.Forms.CheckBox();
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
+            this.hScrollBar2 = new System.Windows.Forms.HScrollBar();
             this.SuspendLayout();
             // 
             // btnAcceptIncomingAsync
@@ -239,18 +240,30 @@
             // hScrollBar1
             // 
             this.hScrollBar1.LargeChange = 2;
-            this.hScrollBar1.Location = new System.Drawing.Point(361, 560);
+            this.hScrollBar1.Location = new System.Drawing.Point(373, 554);
             this.hScrollBar1.Maximum = 10;
             this.hScrollBar1.Name = "hScrollBar1";
             this.hScrollBar1.Size = new System.Drawing.Size(338, 17);
             this.hScrollBar1.TabIndex = 20;
             this.hScrollBar1.ValueChanged += new System.EventHandler(this.hScrollBar1_ValueChanged);
             // 
+            // hScrollBar2
+            // 
+            this.hScrollBar2.Location = new System.Drawing.Point(373, 627);
+            this.hScrollBar2.Maximum = 2000;
+            this.hScrollBar2.Minimum = 100;
+            this.hScrollBar2.Name = "hScrollBar2";
+            this.hScrollBar2.Size = new System.Drawing.Size(306, 17);
+            this.hScrollBar2.TabIndex = 21;
+            this.hScrollBar2.Value = 200;
+            this.hScrollBar2.ValueChanged += new System.EventHandler(this.hScrollBar2_ValueChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(825, 640);
+            this.ClientSize = new System.Drawing.Size(825, 656);
+            this.Controls.Add(this.hScrollBar2);
             this.Controls.Add(this.hScrollBar1);
             this.Controls.Add(this.StatusCheckBox);
             this.Controls.Add(this.Serwo_180);
@@ -301,6 +314,7 @@
         private System.Windows.Forms.Button Serwo_180;
         private System.Windows.Forms.CheckBox StatusCheckBox;
         private System.Windows.Forms.HScrollBar hScrollBar1;
+        private System.Windows.Forms.HScrollBar hScrollBar2;
     }
 }
 

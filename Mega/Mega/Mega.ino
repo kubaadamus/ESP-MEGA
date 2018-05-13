@@ -1,8 +1,6 @@
 #include <SD.h>
 #include <SPI.h>
 #include <Servo.h>
-#define seconds() (millis()/1000)
-long long int Timer1=0;
 String InputFromESP=""; //Dane ESP -> MEGA
 String InputFromCOM=""; //Dane Serial -> MEGA
 //DEKLARACJE SERWOMECHANIZMÓW//
@@ -17,6 +15,8 @@ void setup() {
 Serial1.begin(115200); //Serial pomiędzy ESP - MEGA
 Serial.begin(115200); //Serial pomiędzy PC - MEGA
 pinMode(LED_BUILTIN,OUTPUT); //dioda wbudowana - debug
+pinMode(22,INPUT);
+pinMode(7,OUTPUT);
 
 //SETUP SERWOMECHANIZMÓW//
 s1.attach(2);

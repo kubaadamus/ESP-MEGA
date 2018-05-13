@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,8 +12,27 @@ using LahoreSocketAsync;
 
 namespace Async_Serwer_TCP_IP
 {
+
     public partial class Form1 : Form
     {
+        static System.Windows.Forms.Timer myTimer = new System.Windows.Forms.Timer();
+        static int alarmCounter = 1;
+        static bool exitFlag = false;
+        Random rand = new Random();
+
+
+        private void TimerEventProcessor(Object myObject,
+                                        EventArgs myEventArgs)
+        {
+            
+
+            WyslijDoArduino("srv:"+rand.Next(0,255));
+        }
+
+
+
+
+
         LahoreSocketServer mServer;
         public Form1()
         {
@@ -22,6 +42,14 @@ namespace Async_Serwer_TCP_IP
             mServer.RaiseClientConnectedEvent += HandleClientConnected;
 
             mServer.RaiseTextReceivedEvent += HandleTextReceived;
+
+            /* Adds the event and the event handler for the method that will 
+          process the timer event to the timer. */
+            myTimer.Tick += new EventHandler(TimerEventProcessor);
+
+            // Sets the timer interval to 5 seconds.
+            myTimer.Interval = 500;
+            myTimer.Start();
 
         }
 
@@ -194,6 +222,11 @@ namespace Async_Serwer_TCP_IP
             txtConsole.AppendText(Environment.NewLine);
             textMessage.Clear();
             textMessage.Focus();
+        }
+
+        private void hScrollBar2_ValueChanged(object sender, EventArgs e)
+        {
+            myTimer.Interval = hScrollBar2.Value;
         }
     }
 }

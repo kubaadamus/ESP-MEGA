@@ -36,6 +36,8 @@ if(InputFromESP=="ODPOWIADAM NA TEST"){
   else if(zawiera(InputFromESP,"srv:")){
   InputFromESP.remove(0,4);
   s1.write(InputFromESP.toInt());
+
+  analogWrite(7,InputFromESP.toInt());
   }
 }
 
