@@ -23,15 +23,7 @@ if(InputFromESP=="ODPOWIADAM NA TEST"){
 //========================================= R E A K C J E  ====================================//
 
 //===== L E D  B U I L T I N =======//
-  else if(InputFromESP=="led_on"){ // prosty test
-  digitalWrite(LED_BUILTIN,HIGH);
-  Print("Zapalam leda");
-  }
-  else if(InputFromESP=="led_off"){ // prosty test
-  digitalWrite(LED_BUILTIN,LOW);
-  Print("Gaszę leda");
-  }
-
+digitalWrite(LED_BUILTIN,InputFromESP.substring(5,6).toInt());
 //===== S E R V O =======//
 
 

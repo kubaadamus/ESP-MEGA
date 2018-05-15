@@ -2,7 +2,7 @@ int CS_PIN = 53;
 File file;
 String sd_read(){
   initializeSD();
-  openFile("wifi.txt");
+  SD.open("wifi.txt");
   String wifi_coordinates = readLine();
   closeFile();
   return wifi_coordinates;
@@ -62,19 +62,6 @@ void closeFile()
   }
 }
 
-int openFile(char filename[])
-{
-  file = SD.open(filename);
-  if (file)
-  {
-    //Serial.println("File opened with success!");
-    return 1;
-  } else
-  {
-    //Serial.println("Error opening file...");
-    return 0;
-  }
-}
 
 String readLine()
 {

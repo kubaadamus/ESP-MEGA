@@ -137,12 +137,12 @@ namespace Async_Serwer_TCP_IP
         }
         private void LED_ON_BTN_Click(object sender, EventArgs e)
         {
-            WyslijDoArduino();
+            TablicaDlaArduino[5] = 1;
         }
 
         private void LED_OFF_BTN_Click(object sender, EventArgs e)
         {
-            WyslijDoArduino();
+            TablicaDlaArduino[5] = 0;
         }
 
         private void txtConsole_TextChanged(object sender, EventArgs e)
